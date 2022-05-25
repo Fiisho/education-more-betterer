@@ -155,7 +155,7 @@
 
   .ios body {
 
-    --ion-background: url(../assets/background/background.png) 0 0/100% 100% no-repeat;
+    --ion-background: url('/assets/background/background.png') no-repeat 100% 100%;
 
     --ion-background-color: #000000;
     --ion-background-color-rgb: 0,0,0;
@@ -183,7 +183,7 @@
     --ion-color-step-900: #e6e6e6;
     --ion-color-step-950: #f2f2f2;
 
-    --ion-item-background: #000000;
+    --ion-item-background: url('/assets/background/transparent.png') no-repeat 100% 100%;
 
     --ion-card-background: #1c1c1d;
   }
