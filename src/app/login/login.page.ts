@@ -47,7 +47,7 @@ export class LoginPage implements OnInit {
 
   validateLogin() {
     if (this.User === 'MCKstudent' && this.Pass === 'marist') {
-      this.router.navigate(['/topic-selection']);
+      this.router.navigate(['/main']);
       // this.User = '';
       // this.Pass = '';
     } else {

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data, Types, & Structures</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+
+  <ion-col self-align-center>
+
+    <ion-card>
+
+      <img src="assets\stage6.gif" />
+
+      <ion-card-header>
+        <ion-card-title>Question 3</ion-card-title>
+        <br>
+        <ion-card-subtitle>Questions Progress</ion-card-subtitle>
+        <ion-progress-bar value="0.5" buffer="0.75"></ion-progress-bar>
+      </ion-card-header>
+
+      <ion-card-content>
+        <br>
+        <ion-list>
+
+          <ion-item (click)="wronganswer()" [routerLink]="['/stage-six-software-task-one-question-three']">
+            blank
+          </ion-item>
+
+          <ion-item [routerLink]="['/stage-six-software-task-one-question-four']">
+            correct
+          </ion-item>
+
+          <ion-item (click)="wronganswer()" [routerLink]="['/stage-six-software-task-one-question-three']">
+            blank
+          </ion-item>
+
+        </ion-list>
+        <br>
+      </ion-card-content>
+
+    </ion-card>
+
+
+  </ion-col>
+
+</ion-content>

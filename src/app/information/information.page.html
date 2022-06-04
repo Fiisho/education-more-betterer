@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Information</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+
+  <ion-col align-self-center>
+
+    <ion-card>
+
+      <img src="assets\homepage-gif.gif" />
+      <!-- owner: https://www.behance.net/gallery/33112811/Future-of-Education-Animated-Gif -->
+
+      <ion-card-header>
+        <ion-card-title>Education More Betterer</ion-card-title>
+        <ion-card-subtitle>EMB V1.0</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-slides>
+
+        <ion-slide>
+          <ion-card-content>
+            <ion-card-subtitle>Contact Us!</ion-card-subtitle>
+            Put info here
+            <br>
+            More info
+            <br>
+            <br>
+            For any support requirements, contact us at:
+            <br>
+            <b>support_team@educationmorebetterer.com</b>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p><em>Swipe for more...</em></p>
+          </ion-card-content>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card-content>
+            <ion-card-subtitle>Version 1.0</ion-card-subtitle>
+            Welcome to Education More Betterer, the best high school education tool on the market!
+            <br>
+            <br>
+            Find below the learning materials for each education level.
+            <br>
+            <br>
+            <br>
+            <p><em>Swipe for more...</em></p>
+          </ion-card-content>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card-content>
+            <ion-card-subtitle>Version 1.1</ion-card-subtitle>
+            Welcome to Education More Betterer, the best high school education tool on the market!
+            <br>
+            <br>
+            Find below the learning materials for each education level.
+          </ion-card-content>
+        </ion-slide>
+
+      </ion-slides>
+
+    </ion-card>
+
+    <ion-card>
+
+      <ion-card-header>
+        <ion-card-title>Settings</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list>
+
+          <ion-item>
+            <ion-label>Notifications</ion-label>
+            <ion-toggle (click)='notifs()' slot="start" name="notifs" color="success"></ion-toggle>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Automatic Updates</ion-label>
+            <ion-toggle (click)='autoupdates()' slot="start" name="updates" color="success" checked></ion-toggle>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Remember My Login</ion-label>
+            <ion-toggle (click)='rememberlogin()' slot="start" name="autologin" color="success"></ion-toggle>
+          </ion-item>
+
+        </ion-list>
+      </ion-card-content>
+
+    </ion-card>
+
+  </ion-col>
+
+</ion-content>

@@ -1,0 +1,127 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data, Types, & Structures</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+
+  <ion-col self-align-center>
+
+    <ion-slides pager="true">
+
+      <!-- SLIDE 1 -->
+      <ion-slide style="bottom: 10px;">
+        <ion-card>
+
+          <img src="assets\stage6.gif" />
+
+          <ion-card-header>
+            <ion-card-title>What is Data?</ion-card-title>
+            <ion-card-subtitle>Slide 1</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Computer data is information that is processed or stored by a computer. This information can be in the form
+            of documents, images,
+            audio clips, programs.
+            <br>
+            <br>
+            Data can come in other forms such as: Binary (0,1 - Base 2), Decimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9 - Base
+            10),
+            Hexadecimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F - Base 16), Base is equal to the highest number,
+            plus one.
+          </ion-card-content>
+
+        </ion-card>
+      </ion-slide>
+
+      <!-- SLIDE 2 -->
+      <ion-slide style="bottom: 10px;">
+        <ion-card>
+
+          <img src="assets\stage6.gif" />
+
+          <ion-card-header>
+            <ion-card-title>What are Data Types?</ion-card-title>
+            <ion-card-subtitle>Slide 2</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Data type is the kind or form of a variable which is being used throughout the program. It defines that the
+            particular variable
+            will assign the values of the given data type only. Data types can hold values but not data, therefor it is
+            data-less, said values can
+            directly be assigned to the data type variables.
+            <br>
+            <br>
+            Implementation through data types is a form of abstract implementation. Examples of Data Types include: int,
+            float, double
+          </ion-card-content>
+
+        </ion-card>
+      </ion-slide>
+
+      <!-- SLIDE 3 -->
+      <ion-slide style="bottom: 10px;">
+        <ion-card>
+
+          <img src="assets\stage6.gif" />
+
+          <ion-card-header>
+            <ion-card-title>What are Data Structures?</ion-card-title>
+            <ion-card-subtitle>Slide 3</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Data Structure is the collection of different kinds of data. That entire data can be represented using an
+            object and can be used
+            throughout the entire program. Data structures can hold different kind(s) and types of data within one
+            single object.
+            <br>
+            <br>
+            Implementation through data structures is called concrete implementation. Examples of Data Structures
+            include: stacks, queues, tree
+          </ion-card-content>
+
+        </ion-card>
+      </ion-slide>
+
+      <!-- SLIDE 4 -->
+      <ion-slide style="bottom: 10px;">
+        <ion-card>
+
+          <img src="assets\stage6.gif" />
+
+          <ion-card-header>
+            <ion-card-title>Metadata & Language</ion-card-title>
+            <ion-card-subtitle>Slide 4</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Metadata is "data that provides information about other data", but not the content of the data, such as the
+            text of a message
+            or the image itself, essentially metadata is data about data. Meta Language refers to language that
+            describes another language,
+            an Example of this is EBNF (Extended Backus Naur Form), as well as Railroad Diagrams.
+            <br>
+            <br>
+            <ion-button>
+              <ion-label (click)="railroadAlert()">Example Railroad Diagram</ion-label>
+            </ion-button>
+            <br>
+            <br>
+            <ion-button color="success">
+              <ion-label (click)="questionconfirmationAlert()">Continue!</ion-label>
+            </ion-button>
+          </ion-card-content>
+
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+
+  </ion-col>
+
+</ion-content>
