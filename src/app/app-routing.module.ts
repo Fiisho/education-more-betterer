@@ -43,6 +43,46 @@ const routes: Routes = [
   {
     path: 'stage-six-software-task-one-question-four',
     loadChildren: () => import('./stage-six-software-task-one-question-four/stage-six-software-task-one-question-four.module').then( m => m.StageSixSoftwareTaskOneQuestionFourPageModule)
+  },
+  {
+    path: 'stage-six-software-task-two-info',
+    loadChildren: () => import('./stage-six-software-task-two-info/stage-six-software-task-two-info.module').then( m => m.StageSixSoftwareTaskTwoInfoPageModule)
+  },
+  {
+    path: 'stage-six-software-task-three-info',
+    loadChildren: () => import('./stage-six-software-task-three-info/stage-six-software-task-three-info.module').then( m => m.StageSixSoftwareTaskThreeInfoPageModule)
+  },
+  {
+    path: 'stage-six-software-task-three-question-one',
+    loadChildren: () => import('./stage-six-software-task-three-question-one/stage-six-software-task-three-question-one.module').then( m => m.StageSixSoftwareTaskThreeQuestionOnePageModule)
+  },
+  {
+    path: 'stage-six-software-task-three-question-two',
+    loadChildren: () => import('./stage-six-software-task-three-question-two/stage-six-software-task-three-question-two.module').then( m => m.StageSixSoftwareTaskThreeQuestionTwoPageModule)
+  },
+  {
+    path: 'stage-six-software-task-three-question-three',
+    loadChildren: () => import('./stage-six-software-task-three-question-three/stage-six-software-task-three-question-three.module').then( m => m.StageSixSoftwareTaskThreeQuestionThreePageModule)
+  },
+  {
+    path: 'stage-six-software-task-three-question-four',
+    loadChildren: () => import('./stage-six-software-task-three-question-four/stage-six-software-task-three-question-four.module').then( m => m.StageSixSoftwareTaskThreeQuestionFourPageModule)
+  },
+  {
+    path: 'stage-six-software-task-two-question-one',
+    loadChildren: () => import('./stage-six-software-task-two-question-one/stage-six-software-task-two-question-one.module').then( m => m.StageSixSoftwareTaskTwoQuestionOnePageModule)
+  },
+  {
+    path: 'stage-six-software-task-two-question-two',
+    loadChildren: () => import('./stage-six-software-task-two-question-two/stage-six-software-task-two-question-two.module').then( m => m.StageSixSoftwareTaskTwoQuestionTwoPageModule)
+  },
+  {
+    path: 'stage-six-software-task-two-question-three',
+    loadChildren: () => import('./stage-six-software-task-two-question-three/stage-six-software-task-two-question-three.module').then( m => m.StageSixSoftwareTaskTwoQuestionThreePageModule)
+  },
+  {
+    path: 'stage-six-software-task-two-question-four',
+    loadChildren: () => import('./stage-six-software-task-two-question-four/stage-six-software-task-two-question-four.module').then( m => m.StageSixSoftwareTaskTwoQuestionFourPageModule)
   }
 
 

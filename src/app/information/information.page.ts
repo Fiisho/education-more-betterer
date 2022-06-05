@@ -1,26 +1,34 @@
-import { AlertController } from '@ionic/angular';
+import { AlertController, IonBackButtonDelegate } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
- 
- 
+import { Vibration } from "@ionic-native/vibration/ngx";
+
 @Component({
   selector: 'app-information',
   templateUrl: './information.page.html',
   styleUrls: ['./information.page.scss'],
 })
 export class InformationPage implements OnInit {
- 
+
   constructor(
-    public alertController: AlertController, public toastController: ToastController
+    private v:Vibration, public alertController: AlertController, public toastController: ToastController
   ) { }
- 
+
   ResetPassword = '';
   oldpassword = '';
   newpassword = '';
- 
+
   ngOnInit() {
   }
- 
+
+vibrate(){
+  this.v.vibrate(5000);
+}
+
+stop(){
+  this.v.vibrate(0);
+}
+
   async toast() {
     const toast = await this.toastController.create({
       header: 'Password has been changed!',
@@ -29,9 +37,9 @@ export class InformationPage implements OnInit {
     });
     toast.present();
   }
- 
- 
- 
+
+
+
   async resetpass() {
     const alert = await this.alertController.create({
       header: `Reset your Password`,
@@ -41,7 +49,7 @@ export class InformationPage implements OnInit {
           text: 'Cancel',
           handler: () => {
             console.log(`Password Changed Aborted`);
- 
+
           }
         },
         {
@@ -53,45 +61,45 @@ export class InformationPage implements OnInit {
         }
       ]
     });
- 
+
     await alert.present();
- 
+
   }
- 
+
   async notifs() {
- 
+
     const toast = await this.toastController.create({
-      header: `Notifications have been enabled/disabled`,
+      header: `Notifications have been enabled/disabled!`,
       position: 'bottom',
       duration: 2000
     });
- 
+
     toast.present();
-    console.log(`Notifications have been enabled/disabled`);
+    console.log(`Notifications have been enabled/disabled.`);
   }
- 
+
   async autoupdates() {
- 
+
     const toast = await this.toastController.create({
-      header: `Auto-updates have been enabled/disabled`,
+      header: `Auto-updates have been enabled/disabled!`,
       position: 'bottom',
       duration: 2000
     });
- 
+
     toast.present();
-    console.log(`Auto-updates have been enabled/disabled`);
+    console.log(`Auto-updates have been enabled/disabled.`);
   }
- 
+
   async rememberlogin() {
- 
+
     const toast = await this.toastController.create({
-      header: `Sorry this feature is still in development...`,
+      header: `The unavaiable settings are still being developed...`,
       position: 'bottom',
       duration: 2000
+
     });
- 
     toast.present();
   }
 
 }
- 
+
